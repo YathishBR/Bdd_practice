@@ -1,5 +1,5 @@
 package StepDefinitions;
-
+	
 import java.time.Duration;
 
 import org.openqa.selenium.By;
@@ -20,7 +20,7 @@ public class LoginStepDefinition {
 	    driver.get("https://archive174.estuate.com:3050/login");
 	}
 
-	@When("Userenters valid username and password")
+	@When("User enters valid username and password")
 	public void userenters_valid_username_and_password() {
 	    driver.findElement(By.id("username")).sendKeys("admin");
 	    driver.findElement(By.id("psswrd")).sendKeys("Admin@123");
